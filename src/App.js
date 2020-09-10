@@ -87,12 +87,12 @@ function App() {
                 <div className="temp">
                   {weather.main.temp}°C
                   <br />
-                  {Math.round(weather.main.temp * 9) / 5 + 32}°F
+                  {Math.round((weather.main.temp * 9) / 5 + 32)}°F
                 </div>
                 <h1 className="weather">Feels Like</h1>
                 <div className="temp">
                   {Math.round(weather.main.feels_like)}°C <br />
-                  {(Math.round(weather.main.feels_like) * 9) / 5 + 32}°F
+                  {Math.round((weather.main.feels_like * 9) / 5 + 32)}°F
                 </div>
                 <div className="weather">{weather.weather[0].main}</div>
               </div>
